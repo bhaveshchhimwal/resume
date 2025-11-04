@@ -1,0 +1,197 @@
+%-------------------------
+% Resume in Latex
+% Author : Bhavesh Chhimwal
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% (kept commented intentionally)
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated PDF is machine-readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% -------- Achievement commands (matched spacing) --------
+\newcommand{\achievementItemListStart}{\begin{itemize}}
+\newcommand{\achievementItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\achievementItem}[1]{
+  \item\small{
+    {#1 \vspace{-5pt}}
+  }
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \textbf{Bhavesh Chhimwal}} \\[5pt]
+    \href{mailto:bhaveshchhimwal01@gmail.com}{bhaveshchhimwal01@gmail.com} \\[5pt]
+    \href{https://www.linkedin.com/in/bhavesh-chhimwal/}{LinkedIn} $|$
+    \href{https://www.codechef.com/users/conficker_404}{CodeChef} $|$
+    \href{https://leetcode.com/u/conficker_404/}{LeetCode} $|$
+    \href{https://github.com/bhaveshchhimwal}{GitHub} $|$
+    \href{https://bhaveshchhimwal.netlify.app/}{Portfolio}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Panjab University, Chandigarh}{2023 -- 2027}
+      {Bachelor of Engineering in Information Technology}{CGPA: 7.3/10}
+    \resumeSubheading
+      {Mother’s Glory Public School, Ramnagar}{2019 -- 2023}
+      {Senior Secondary Education}{Grade: 88.8\%}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Development Intern}{June 2025 -- July 2025}
+      {Avayo Technologies}{Jaipur, India}
+      \resumeItemListStart
+       \resumeItem{Developed and maintained scalable \textbf{RESTful APIs} using \textbf{Node.js} and \textbf{Express.js}, enhancing backend performance, scalability, and overall system responsiveness.}
+       \resumeItem{Implemented secure authentication and authorization using \textbf{JWT} and \textbf{OAuth}, strengthening data protection and preventing unauthorized access.}
+       \resumeItem{Integrated secure \textbf{payment gateways} and optimized transaction handling to ensure reliable online payments.}
+       \resumeItem{Collaborated with \textbf{frontend teams} to ensure smooth \textbf{end-to-end API integration}, improving data consistency and reducing integration overhead.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{NexChat} $|$ \href{https://nexchat44.onrender.com/}{\underline{Live Demo}}}{\emph{MongoDB, Express.js, React.js, Node.js, Socket.IO}}
+    \resumeItemListStart
+      \resumeItem{Built a \textbf{real-time CRUD chat application} with \textbf{WebSockets} for instant, bidirectional communication.}
+      \resumeItem{Implemented secure authentication and authorization using \textbf{JWT} and \textbf{bcrypt} for data protection.}
+      \resumeItem{Integrated an \textbf{AI assistant} using the \textbf{Google Gemini API} to provide intelligent chat responses.}
+      \resumeItem{Utilized \textbf{MongoDB} as the backend database and \textbf{Cloudinary} for storing and sharing media files.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{PopIn} $|$ \href{https://github.com/...}{\underline{Live Demo}}}{\emph{Express.js, React.js, Node.js, Stripe API}}
+    \resumeItemListStart
+      \resumeItem{Developed a full-stack web application allowing organizers to list events and users to securely purchase tickets.}
+      \resumeItem{Implemented secure authentication using \textbf{Firebase Google OAuth} and \textbf{JWT}, enabling seamless user login.}
+      \resumeItem{Designed \textbf{MongoDB schemas} to efficiently manage \textbf{users, events, tickets, and transactions}.}
+      \resumeItem{Integrated \textbf{Cloudinary} for efficient media storage and the \textbf{Stripe API} to implement a secure payment gateway.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Blog API} $|$ \href{https://github.com/...}{\underline{GitHub}}}{\emph{Node.js, Express.js, MongoDB}}
+    \resumeItemListStart
+      \resumeItem{Designed and developed a \textbf{RESTful API} to manage posts, users, and comments.}
+      \resumeItem{Implemented \textbf{JWT-based authentication} and role-based authorization for secure access control.}
+      \resumeItem{Integrated \textbf{Mongoose ODM} for schema validation, relational data handling, and efficient database queries.}
+      \resumeItem{Added \textbf{CRUD functionality} with pagination and filtering to optimize API performance and scalability.}
+      \resumeItem{Tested endpoints using \textbf{Postman} to ensure reliability and performance validation.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+\achievementItemListStart
+    \achievementItem{Achieved \textbf{2 stars} on CodeChef with a maximum rating of \textbf{1465}.}
+    \achievementItem{Secured a \textbf{Global Rank} of \textbf{314} out of \textbf{35,792} participants in CodeChef Starters 172 (Div-4).}
+    \achievementItem{Secured a \textbf{Global Rank} of \textbf{5533} out of \textbf{13,779} participants in the \textbf{\href{https://www.facebook.com/codingcompetitions/hacker-cup/2025/certificate/921287033136593}{Meta Hacker Cup 2025}}.}
+    \achievementItem{Achieved a maximum rating of \textbf{1566} on LeetCode, ranking in the \textbf{top 28\%} of global users.}
+\achievementItemListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, HTML, CSS, JavaScript, Python, SQL} \\
+     \textbf{Libraries \& Frameworks}{: React.js, Node.js, Express.js, MongoDB, Firebase} \\
+     \textbf{Relevant Coursework}{: OOP, Data Structures, Algorithms, OS, DBMS} \\
+     \textbf{Others}{: Git, GitHub, Postman}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
