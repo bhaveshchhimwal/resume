@@ -58,18 +58,20 @@
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
-}
+} 
+
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
 \newcommand{\achievementItemListStart}{\begin{itemize}}
 \newcommand{\achievementItemListEnd}{\end{itemize}\vspace{-5pt}}
 \newcommand{\achievementItem}[1]{\item\small{{#1 \vspace{-5pt}}}}
 
+
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-%-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
@@ -116,16 +118,7 @@
 \section{Projects}
 \resumeSubHeadingListStart
 
-  \resumeProjectHeading
-    {\textbf{PopIn} $|$ \href{https://popin-0tgd.onrender.com/}{\underline{Live Demo}}}{\emph{Node.js, Express.js, React.js, MongoDB, Stripe API}}
-    \resumeItemListStart
-      \resumeItem{Created a full-stack event management platform enabling organizers to list and sell tickets securely.}
-      \resumeItem{Integrated Firebase Google OAuth and JWT-based authentication to enable secure, seamless user access and maintain consistent session integrity across the platform.}
-      \resumeItem{Designed and optimized MongoDB schemas to manage users, events, tickets, and transactions, ensuring scalability, data integrity, and efficient query performance.}
-      \resumeItem{Implemented the Stripe API for payment processing and Cloudinary for media storage, ensuring reliability and scalability.}
-    \resumeItemListEnd
-    
-  \resumeProjectHeading
+\resumeProjectHeading
     {\textbf{NexChat} $|$ \href{https://nexchat44.onrender.com/}{\underline{Live Demo}}}{\emph{Node.js, Express.js, React.js, MongoDB, Socket.IO}}
     \resumeItemListStart
       \resumeItem{Developed a real-time CRUD chat platform using WebSockets for instant bidirectional communication.}
@@ -134,15 +127,13 @@
       \resumeItem{Managed media assets via Cloudinary and structured data storage with MongoDB, improving message retrieval efficiency.}
     \resumeItemListEnd
 
-
-
-  \resumeProjectHeading
-    {\textbf{OpenPages} $|$ \href{https://documenter.getpostman.com/view/42559507/2sB3WsNJyS}{\underline{API Documentation}}}{\emph{Node.js, Express.js, MongoDB, Postman}}
+\resumeProjectHeading
+    {\textbf{PopIn} $|$ \href{https://popin-0tgd.onrender.com/}{\underline{Live Demo}}}{\emph{Node.js, Express.js, React.js, MongoDB, Stripe API}}
     \resumeItemListStart
-      \resumeItem{Architected a RESTful API for blog management, supporting CRUD operations for posts, users, and comments.}
-      \resumeItem{Implemented JWT-based authentication and role-based access control for data security and admin features.}
-      \resumeItem{Leveraged Mongoose ODM for data modeling, schema validation, and efficient query optimization.}
-      \resumeItem{Enhanced scalability with pagination and filtering, and validated API endpoints through Postman testing.}
+      \resumeItem{Created a full-stack event management platform enabling organizers to list and sell tickets securely.}
+      \resumeItem{Integrated Firebase Google OAuth and JWT-based authentication to enable secure, seamless user access and maintain consistent session integrity across the platform.}
+      \resumeItem{Designed and optimized MongoDB schemas to manage users, events, tickets, and transactions, ensuring scalability, data integrity, and efficient query performance.}
+      \resumeItem{Implemented the Stripe API for payment processing and Cloudinary for media storage, ensuring reliability and scalability.}
     \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -150,11 +141,10 @@
 %-----------ACHIEVEMENTS-----------
 \section{Achievements}
 \achievementItemListStart
-    \achievementItem{Achieved 2 stars on CodeChef with a maximum rating of 1521.}
+    \achievementItem{Achieved 2 stars on CodeChef with a maximum rating of 1545.}
     \achievementItem{Secured a global rank of 314 out of 35,792 participants in CodeChef Starters 172 (Div-4).}
-   \achievementItem{Qualified for \href{https://www.facebook.com/codingcompetitions/hacker-cup/2025/certificate/921287033136593}{\underline{Meta Hacker Cup 2025}} – Round 2, ranking among the top 3,000 participants globally.}
-
-    \achievementItem{Achieved a maximum rating of 1601 on LeetCode, ranking in the top 22\% of global users.}
+    \achievementItem{Qualified for \href{https://www.facebook.com/codingcompetitions/hacker-cup/2025/certificate/921287033136593}{\underline{Meta Hacker Cup 2025}} – Round 2, ranking among the top 3,000 participants globally.}
+    \achievementItem{Achieved a maximum rating of 1625 on LeetCode, ranking in the top 20\% of global users.}
 \achievementItemListEnd
 
 %-----------TECHNICAL SKILLS-----------
@@ -167,6 +157,13 @@
      \textbf{Tools \& Platforms}{: Git, GitHub, Postman, VS Code}
     }}
  \end{itemize}
+
+%-----------EXTRACURRICULAR ACTIVITIES-----------
+\section{Extracurricular Activities}
+\begin{itemize}
+  \item\small{Member of the organizing team for Software Freedom Day 2023 at Panjab University — an annual event promoting open-source technologies.}
+\end{itemize}
+
 
 %-------------------------------------------
 \end{document}
